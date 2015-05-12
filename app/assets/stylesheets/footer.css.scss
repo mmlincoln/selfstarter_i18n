@@ -1,22 +1,39 @@
 .footer 
 {
   padding: 40px 0;
+  margin: 0 0 0 0;
   ul 
   {
     float: left;
+
   }
   li 
   {
-    margin-bottom: 10px;
+    list-style: none;
+    display: inline;
+    float: left;
+    margin: 10px;
+
   }
   a 
   {
-    font-size: 18px;
+    font-size: 14pt;
     color: #525252;
     font-family: $primary_font, $secondary_font, $tertiary_font;
   }
   p 
   {
-    font-size: 18px;
+    
   }
+  .pull-right
+  {
+    font-size: 10pt;
+
+  }
+  .language-chooser 
+  {
+    float: left;
+    font-size: 14pt;
+    display: inline;
+}
 }

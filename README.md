@@ -1,3 +1,9 @@
+#Project Description
+We are localizing an open source ruby on rails app found on Github, called Selfstarter, into Spanish and Simplified Chinese. The basic localization workflow includes internationalization, i.e. t-wrapping all the strings and storing them in en.yml file, solving concatenation issues, translating in es.yml and zh.yml files and finally creating a language pikcer. 
+
+The detailed decription of Selfstarter and the setup steps are described in the following. 
+
+
 # Selfstarter
 Selfstarter makes it easy to roll your own crowdfunding site. To get started, fork this repository and change around ```config/settings.yml``` to suit your needs.
 

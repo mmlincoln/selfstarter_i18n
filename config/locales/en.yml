@@ -2,4 +2,100 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  layouts:
+    footer:
+      faq: "Help & FAQs"
+      press: "Press & Media"
+      blog: "Blog"
+      privacy: "Privacy Policy"
+      login: "Login"
+      copyright: "© 2009-2012 Apigy Inc. All rights reserved. Patents pending."
+    application:
+      product_name: "Selfstarter"
+  preorder:
+    copyright:
+      language_options: "View this page in:"
+      copyright_info_html: "© You. Made by the guys at <a href=\"https://lockitron.com\">Lockitron</a>. MIT License."
+    header:
+      product_name: "Selfstarter"
+    payment_options:
+      sold_out: "Sold Out"
+      limited: "Limited number remaining:"
+    checkout:
+      checkout_title: "Check Out"
+      checkout_body: "All of your payment information will be secured and stored with Amazon Payments. If you don't have an Amazon account, simply select -I'm a new Customer- on the next page."
+      use_payment_options: "Select a payment option and enter your email address below."
+      enter_email: "Enter your email address below."
+      email_address: "Email"
+      checkout_button: "Checkout"
+    share:
+      congrats: "Hooray! You've just reserved"
+      product_description: "a set of widgets"
+      congrats_2: "Congratulations, you are supporter number:"
+      congrats_3: "Share the great news that you are supporting"
+      product_name: "Selfstarter"  
+      reservation_id: "Reservation ID:"
+      reservation_id_2: "You can bookmark or print this page for your records."
+    checkout_folder:
+      sidebar:
+        when_charge: "When will I be charged?"
+        when_charge_2: "We recommend that you only charge backers when you can ship, otherwise your payment provider won't be happy."
+    homepage:
+      faqs:
+        faq_title: "Frequently Asked Questions"
+        q1: "How do I setup Amazon Payments?"
+        a1_html: "You'll need to <a href=\"https://payments.amazon.com/sdui/sdui/accountstatus\">create an Amazon Seller Central account</a>. Afterwards, get your access key and secret key from the \"Integration\" tab on your AWS account. <a href=\"https://payments.amazon.com/sdui/sdui/helpTab/Checkout-by-Amazon/Advanced-Integration-Help/Using-Your-Access-Key\">Click here for more info</a>."
+        a1_2_html: "Once you have your access key and secret key, head over to <code>config/settings.yml</code>. Change <code>amazon_access_key</code> and <code>amazon_secret_key</code> appropriately."
+        q2: "Can I use another payments provider?"
+        a2_html: "Of course. We haven't built in support for other providers, but we recommend that you take a look at <a href=\"https://stripe.com\">Stripe</a> or <a href=\"https://wepay.com\">WePay</a>."
+        q3: "How do I edit the FAQ?"
+        a3_html: "The faq is a partial located in <code>app/views/preorder/homepage/_faq.html.erb</code> The <code>summary</code> tag is the title, the <code>p</code> is the body. Make sure to add an <code>li</code> tag for each FAQ entry."
+        q4: "How do I change around the images, product name, etc?"
+        a4_html: "The best way is in <code>config/settings.yml</code>. It has variables for several different parts, the video, the product name, the call to action button (\"Fork Now\"), and several more."
+        q5: "How do I change the CSS?"
+        a5_html: "Head over to <code>app/assets/stylesheets/variables.css.scss</code>. It makes it easy to change around the elements used throughout the HTML."
+        a5_2_html: "Alternatively, you can dive right into the CSS, have a look at <code>app/assets/stylesheets/main.css.scss</code>."
+        q6: "Why did you release this?"
+        a6: "Hardware startups are less welcome on Kickstarter than they were 6 months ago. We needed to roll our own kickstarter, so we did. Other hardware startups probably will too, so we made it easier for them by open sourcing our way of doing it."
+        q7: "What software stack does this use?"
+        a7_html: "It's a Ruby on Rails app that makes heavy use of SCSS, Kickstarter's wonderful <code>amazon_flex_pay</code> gem, and a hint of CoffeeScript."
+        q8: "How do I deploy it?"
+        a8: "We recommend using Heroku. We include a Procfile for you, so all you need to do is:"
+        a8_2_html: "Install the <a href=\"https://toolbelt.heroku.com/\">Heroku Toolbelt</a>"
+        a8_3_html: "Run <code>heroku create</code> in Selfstarter's folder</code>"
+        a8_4_html: "Run <code>git push heroku master</code> in Selfstarter's folder"
+      key_points:
+        what_is_selfstarter: "What is Selfstarter?"
+        what_is_selfstarter_2_html: "Selfstarter is an open source starting point for building your own ad-hoc crowdfunding site. It was put together by <a href=\"https://lockitron.com\">Lockitron</a> after they were <a href=\"http://techcrunch.com/2012/10/07/the-story-of-lockitron-crowdfunding-without-kickstarter/\">turned down from Kickstarter</a>."
+        how_do_i_use_it: "How do I use it?"
+        how_do_i_use_it_2: "Selfstarter is a starting point for you to build your own solution. It is set up to collect reservations using Amazon Payments, but you can choose your own provider too."
+        just_a_skeleton: "It's just a skeleton"
+        just_a_skeleton_2: "We've kept Selfstarter really simple, but that also means that you should beef it up with your own authentication, administration and product management code."
+        lets_get_started: "Let's get started"
+        lets_get_started_2: "Most of what you need to get started is in the Readme. Selfstarter is based on Ruby on Rails, and we've tried to break up all of the different parts in a sensible fashion."
+      middle_reserve:
+        ships: "Ships at some point, surely!"
+        call_to_action: "Reserve Now"
+      other_points:
+        section_1: "Section One"
+        section_1_2: "Morbi tempus dapibus egestas. Nullam accumsan dolor ut purus ornare congue. Phasellus ac commodo neque. Quisque non ligula lacus, id hendrerit eros."
+        section_2: "Section Two"
+        section_2_2: "Vivamus nec posuere mauris. Suspendisse mi sem, egestas ac tristique ac, varius ac lectus. Sed porttitor dolor adipiscing mauris sagittis."
+        section_3: "Section Three"
+        section_3_2: "Curabitur dolor elit, placerat et malesuada et, tristique vel nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        section_4: "Section Four"
+        section_4_2: "Curabitur ac mi elit, nec tempor odio. Nam sollicitudin, sapien sit amet elementum pretium, turpis mi fermentum nisl, ac vehicula purus lacus non velit."
+      stats:
+        video_embed_url: "https://www.youtube.com/v/D1L3o88GKew"
+        primary_stat: "backers"
+        primary_stat_verb: "backer"
+        project_goal: "48505"
+        x_of_money: "/"
+        days_left: "days left"
+        price_human: "It costs money!"
+        dont_give_them_a_reason_to_say_no: "You'll get this exact site. All you'll need to get started is a great product."
+        progress_text: "Funded!"
+        ships: "Ships at some point, surely!"
+        call_to_action: "Reserve Now"
+      value_proposition:
+        vp_content: "Roll your own crowdfunding"

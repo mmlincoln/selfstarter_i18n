@@ -8,14 +8,14 @@
             <%= label_tag("payment_option_#{index}", p.amount_display) %>
             <div class="shipping">
               <% if sold_out p %>
-                <span class="sold-out">Sold Out</span>
+                <span class="sold-out"><%= t('preorder.payment_options.sold_out') %></span>
               <% end %>
               <span><%= p.shipping_desc %></span>
             </div>
             <div class="description">
               <p class="full"><%= raw p.description %></p>
               <% if p.limit > -1 %>
-                <p class="limited">Limited (<%= p.limit - order_count(p) %> of <%= p.limit %> remaining)</p>
+                <p class="limited"><%= t('preorder.payment_options.limited') %> (<%= order_count(p) %>)</p>
               <% end %>
               <p class="delivery_date"><%= p.delivery_desc %></p>
             </div>

@@ -1,0 +1,101 @@
+﻿# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+es:
+  layouts:
+    footer:
+      faq: "Ayuda y preguntas frequentes"
+      press: "Prensa y medios"
+      blog: "Blog"
+      privacy: "Política de privacidad"
+      login: "Entrar"
+      copyright: "© 2009-2012 Apigy Inc. Todos los derechos reservados Patentes pendientes."
+    application:
+      product_name: "Selfstarter"
+  preorder:
+    copyright:
+      language_options: "Lee esta página en:"
+      copyright_info_html: "© Tu. Hecho por los hombres de <a href=\"https://lockitron.com\">Lockitron</a>. Licencia MIT."
+    header:
+      product_name: "Selfstarter"
+    payment_options:
+      sold_out: "Liquidado"
+      limited: "Quedan pocos:"
+    checkout:
+      checkout_title: "Pagar"
+      checkout_body: "Todo su información de pago será seguro y estará con Amazon Payments. Si no tenga cuenta de Amazon, selecciona -Soy cliente nuevo- en la próxima página."
+      use_payment_options: "Selecciona una opción de pago y escribe su correo electrónico."
+      enter_email: "Escribe su correo electrónico."
+      email_address: "Correo electrónico"
+      checkout_button: "Pagar"
+    share:
+      congrats: "Guay! Acaba de reservar"
+      product_description: "un tanto de mierda"
+      congrats_2: "Felicidades, es el apoyador número:"
+      congrats_3: "Comparte las buenas noticias que está apoyando"
+      product_name: “Selfstarter”
+      reservation_id: "Número de reserva:"
+      reservation_id_2: "Puede marcar o imprimir esta página por sus archivos."
+    checkout_folder:
+      sidebar:
+        when_charge: "¿Cúando me van a cobrar?"
+        when_charge_2: "Recomendamos que solo cobra a los apoyadores cuando pueda enviar el producto, si no el proveedor de pago no estará feliz."
+    homepage:
+      faqs:
+        faq_title: "Preguntas frecuentes"
+        q1: "¿Cómo configuro Amazon Payments?"
+        a1_html: "Necesitará <a href=\"https://payments.amazon.com/sdui/sdui/accountstatus\">crear una cuenta de Amazon Seller Central</a>. Depués, recibe una clave de acceso de la pestaña \"Integration\" en su cuenta AWS. <a href=\"https://payments.amazon.com/sdui/sdui/helpTab/Checkout-by-Amazon/Advanced-Integration-Help/Using-Your-Access-Key\">Haz clic aquí para aprender más</a>."
+        a1_2_html: "Al recibir su clave de acceso y su clave secreta, va al <code>config/settings.yml</code>. Cambia <code>amazon_access_key</code> y <code>amazon_secret_key</code> a su información."
+        q2: "¿Puedo usar otro proveedor de pago?"
+        a2_html: "Por supuesto. No hemos construido apoyo por otros proveedores, pero recomendamos que miren <a href=\"https://stripe.com\">Stripe</a> o <a href=\"https://wepay.com\">WePay</a>."
+        q3: "¿Cómo edito las preguntas más frecuentes?"
+        a3_html: "Las preguntas más frecuentes están ubicadas en <code>app/views/preorder/homepage/_faq.html.erb</code> La etiqueta <code>summary</code> es el título y la <code>p</code> es el cuerpo. No olvide añadir una etiqueta <code>li</code> para cada entrada en las preguntas más frecuentes."
+        q4: "¿Cómo cambio las imágenes, el nombre del producto, etc?"
+        a4_html: "La mejor manera está ubicada en <code>config/settings.yml</code>. Tiene variables para distintas partes del sitio, incluye el video, el nombre del producto, los botones, y más."
+        q5: "¿Cómo cambio el CSS?"
+        a5_html: "Va al <code>app/assets/stylesheets/variables.css.scss</code>. Esa página lo hace fácil cambiar los elementos usados por todo el sitio."
+        a5_2_html: "O, también puede explorar el CSS aquí <code>app/assets/stylesheets/main.css.scss</code>."
+        q6: "¿Por qué lo hicieron todo?"
+        a6: "Recaudar dinero por hardware en Kickstarter no tan es fácil como antes. Necesitamos nuestro propio kickstarter, así que lo hicimos. Otros negocios probablemente lo necesitará, así que lo hicimos todo de código abierto para ayudarles."
+        q7: "¿Qué tipo de software usa Selfstarter?"
+        a7_html: "Usa Ruby on Rails y también SCSS, el gem <code>amazon_flex_pay</code> de Kickstarter, y un poco de CoffeeScript."
+        q8: "¿Cómo lo implemento?"
+        a8: "Recomendamos usar Heroku. Incluimos un Procfile para usted, así que solo necesita"
+        a8_2_html: "Instalar el <a href=\"https://toolbelt.heroku.com/\">Heroku Toolbelt</a>"
+        a8_3_html: "Ejecutar <code>heroku create</code> en la carpeta de Selfstarter</code>"
+        a8_4_html: "Ejecutar <code>git push heroku master</code> en la carpeta de Selfstarter"
+      key_points:
+        what_is_selfstarter: "¿Qué es Selfstarter?"
+        what_is_selfstarter_2_html: "Selfstarter es un proyecto de código abierto para ayudarle construir su propio sitio de crowdfunding. Lo ha hecho <a href=\"https://lockitron.com\">Lockitron</a> después de estar rechazado por <a href=\"http://techcrunch.com/2012/10/07/the-story-of-lockitron-crowdfunding-without-kickstarter/\">Kickstarter</a>."
+        how_do_i_use_it: "¿Cómo lo uso?"
+        how_do_i_use_it_2: "Selfstarter es solo el principio para que contruyas tu propia solución. Está programada para aceptar reservas por Amazon Payments, pero puedes cambiar a su propio proveedor."
+        just_a_skeleton: "Solo es un esqueleto."
+        just_a_skeleton_2: "Selfstarter es muy sencillo, y por eso puede reforzarlo con su propio código de gestión, autenticación, y administración."
+        lets_get_started: "Empezamos ya"
+        lets_get_started_2: "La mayoría de que necesita está en el Readme. Selfstarter se base en Ruby on Rails. Esforzamos partir todo de una manera sensata. "
+      middle_reserve:
+        ships: "Vamos enviar en algun momento, le aseguro..."
+        call_to_action: "Reservar ahora"
+      other_points:
+        section_1: "Parte uno"
+        section_1_2: "Morbi tempus dapibus egestas. Nullam accumsan dolor ut purus ornare congue. Phasellus ac commodo neque. Quisque non ligula lacus, id hendrerit eros."
+        section_2: "Parte dos"
+        section_2_2: "Vivamus nec posuere mauris. Suspendisse mi sem, egestas ac tristique ac, varius ac lectus. Sed porttitor dolor adipiscing mauris sagittis."
+        section_3: "Parte tres"
+        section_3_2: "Curabitur dolor elit, placerat et malesuada et, tristique vel nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        section_4: "Parte cuatro"
+        section_4_2: "Curabitur ac mi elit, nec tempor odio. Nam sollicitudin, sapien sit amet elementum pretium, turpis mi fermentum nisl, ac vehicula purus lacus non velit."
+      stats:
+        video_embed_url: "https://www.youtube.com/v/D1L3o88GKew"
+        primary_stat: "apoyadores"
+        primary_stat_verb: "apoyador"
+        project_goal: "48505"
+        x_of_money: "/"
+        days_left: "días más"
+        price_human: "Hay que pagar algo"
+        dont_give_them_a_reason_to_say_no: "Recibirá este sitio exacto. Entonces solo necesita un producto genial para empezar."
+        progress_text: "Todo recaudado!"
+        ships: "Lo enviamos en algun momento, sin duda..."
+        call_to_action: "Reservar ahora"
+      value_proposition:
+        vp_content: "Haz tu propio crowdfunding"

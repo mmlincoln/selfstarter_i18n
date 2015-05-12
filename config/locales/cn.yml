@@ -1,0 +1,101 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+cn:
+  layouts:
+    footer:
+      faq: "帮助 & 常见问题"
+      press: "新闻 & 媒体"
+      blog: "博客"
+      privacy: "隐私策略"
+      login: "登入"
+      copyright: "© 2009-2012 Apigy Inc. 版权所有。专利申请中。"
+    application:
+      product_name: "Selfstarter"
+  preorder:
+    copyright:
+      language_options: "查看这个页面:"
+      copyright_info_html: "© You. 网页制作者是<a href=\"https://lockitron.com\">Lockitron</a>的成员。 MIT 许可证。"
+    header:
+      product_name: "Selfstarter"
+    payment_options:
+      sold_out: "已售完"
+      limited: "剩下数额有限："
+    checkout:
+      checkout_title: "付款"
+      checkout_body: "您的所有付款信息将以亚马逊支付的形式安全储存。如果您没有亚马逊账户，请在下一页选择-我是新顾客。"
+      use_payment_options: "选择一种付款方式并在以下位置输入您的电子邮箱。"
+      enter_email: "在以下位置输入您的电子邮箱。"
+      email_address: "电子邮箱"
+      checkout_button: "付款"
+    share:
+      congrats: "太好了！您已预订成功。"
+      product_description: "一套小工具"
+      congrats_2: "恭喜！您的支持者号码是："
+      congrats_3: "和您的朋友分享这一支持时刻"
+      product_name: "Selfstarter"  
+      reservation_id: "预订 ID:"
+      reservation_id_2: "您可以收藏或打印此页作为您的记录。"
+    checkout_folder:
+      sidebar:
+        when_charge: "我何时会看到金额出现在账户上？"
+        when_charge_2: "我们建议您在可以开始发货的时候再从付款者账户中扣款，不然付款者将可能感到不满意。"
+    homepage:
+      faqs:
+        faq_title: "常见问题"
+        q1: "我如何设置亚马逊支付？"
+        a1_html: "您需要 <a href=\"https://payments.amazon.com/sdui/sdui/accountstatus\">创建一个亚马逊卖家中心账户</a>。然后，从卖家中心账户里 \"Integration\" 选项卡中获取您的访问信息和秘钥。<a href=\"https://payments.amazon.com/sdui/sdui/helpTab/Checkout-by-Amazon/Advanced-Integration-Help/Using-Your-Access-Key\">点击这里获取更多信息</a>。"
+        a1_2_html: "获取访问信息和秘钥之后，请访问 <code>config/settings.yml</code>. 适当更改<code>amazon_access_key</code> 以及 <code>amazon_secret_key</code>。"
+        q2: "我是否可以使用其他支付平台?"
+        a2_html: "当然。我们目前为止还不能支持其他支付平台，但是我们建议您关注一下 <a href=\"https://stripe.com\">Stripe</a> 或 <a href=\"https://wepay.com\">WePay</a>。"
+        q3: "我如何修改常见问题？"
+        a3_html: "常见问题部分一般位于 <code>app/views/preorder/homepage/_faq.html.erb</code> 。<code>summary</code> 标签是标题，<code>p</code> 标签是正文。请务必在每个常见问题条目处添加 <code>li</code>标签。"
+        q4: "我如何修改图片或产品名称等等？"
+        a4_html: "最佳修改方法在 <code>config/settings.yml</code>中。网页中不同的部分，视频、产品名称、行动按钮(\"Fork Now\")等等都有各自的变量。"
+        q5: "我如何修改 CSS？"
+        a5_html: "进入 <code>app/assets/stylesheets/variables.css.scss</code>页面。在这里可以非常容易地修改HTLM中使用的所有元素。"
+        a5_2_html: "另外，你也可以直接进入 CSS，在 <code>app/assets/stylesheets/main.css.scss</code>进行修改。"
+        q6: "您为何发布这个？"
+        a6: "硬件初创公司在 KickStarter 上的受欢迎程度比半年前低。当时我们需要拥有自己的 KickStarter，于是我们就这样做了。其他硬件初创公司也会有这样的想法，于是我们将我们所做的部分作为开源资源共享给大家，使他们能够能加便利地筹资。"
+        q7: "这个网页使用了哪些软件堆栈？"
+        a7_html: "这个网页使用了 Ruby 在 Rails 程序中运行，很大程度上使用了 SCSS，Kickstarter 中非常好的<code>amazon_flex_pay</code> gem 以及稍许CoffeeScript。"
+        q8: "我该如何进行配置？"
+        a8: "我们推荐使用 Heroku。我们已经将 Procfile 包含在内，所以您只需要："
+        a8_2_html: "安装 <a href=\"https://toolbelt.heroku.com/\">Heroku Toolbelt</a>"
+        a8_3_html: "在 Selfstarter 的文件夹中运行 <code>heroku create</code>"
+        a8_4_html: "在 Selfstarter 的文件夹中运行<code>git push heroku master</code> "
+      key_points:
+        what_is_selfstarter: "Selfstarter 是什么？"
+        what_is_selfstarter_2_html: "Selfstarter是一个开源的起点，来构建自己的即席群众募资现场。它是由<a href=\"https://lockitron.com\">Lockitron</a> 在 <a href=\"http://techcrunch.com/2012/10/07/the-story-of-lockitron-crowdfunding-without-kickstarter/\">被 Kickstarter 拒绝之后</a>组建起来的。"
+        how_do_i_use_it: "我如何使用它？"
+        how_do_i_use_it_2: "Selfstarter 只是一个起点，你可以在此基础上创建自己的网站。它可以用来使用亚马逊支付方式募集定金。但是你也可以选择其他支付方式进行设置。"
+        just_a_skeleton: "这只是一个躯壳"
+        just_a_skeleton_2: "我们在设计之中，将 Selfstarter 保持地比较简单，但是这也意味着您可以用按照您的产品设计、管理模式和产品管理规范来进行定制。"
+        lets_get_started: "我们现在开始"
+        lets_get_started_2: "开始旅程您最需要知道的内容都在 Readme 文件中。Selfstarter是基于 Ruby on Rails 而建立的，我们一直试图用一个合理的方式打破所有的不同部分。"
+      middle_reserve:
+        ships: "在某个时点发货，当然没问题！"
+        call_to_action: "现在预订"
+      other_points:
+        section_1: "第 1 部分"
+        section_1_2: "Morbi tempus dapibus egestas. Nullam accumsan dolor ut purus ornare congue. Phasellus ac commodo neque. Quisque non ligula lacus, id hendrerit eros."
+        section_2: "第 2 部分"
+        section_2_2: "Vivamus nec posuere mauris. Suspendisse mi sem, egestas ac tristique ac, varius ac lectus. Sed porttitor dolor adipiscing mauris sagittis."
+        section_3: "第 3 部分"
+        section_3_2: "Curabitur dolor elit, placerat et malesuada et, tristique vel nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        section_4: "第 4 部分"
+        section_4_2: "Curabitur ac mi elit, nec tempor odio. Nam sollicitudin, sapien sit amet elementum pretium, turpis mi fermentum nisl, ac vehicula purus lacus non velit."
+      stats:
+        video_embed_url: "https://www.youtube.com/v/D1L3o88GKew"
+        primary_stat: "支持者"
+        primary_stat_verb: "支持者"
+        project_goal: "48505"
+        x_of_money: "/"
+        days_left: "剩余天数"
+        price_human: "它需要资金！"
+        dont_give_them_a_reason_to_say_no: "你会看到产品的确切网页。而且你现在将要看到的是一个伟大的产品。"
+        progress_text: "资助成功！"
+        ships: "在某个时点发货，当然没问题！"
+        call_to_action: "现在预订"
+      value_proposition:
+        vp_content: "启动属于您自己的众筹"
